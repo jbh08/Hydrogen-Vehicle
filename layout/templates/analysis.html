@@ -13,12 +13,14 @@
     <title>data</title>
   </head>
   <body>
-{#    {% extends 'index.html' %}#}
+    {% include 'nav.html' %}
+    {% block div %}
 
+    {% endblock %}
     <div class="container">
       <div class="row">
         <div class="col-">
-            <div style="padding:10px;"> </div>
+            <div style="padding:10px;"></div>
              <div class="btn-group-vertical">
                 <div class="btn-group" role="group" aria-label="Basic example">
                   <button type="button" class="btn btn-secondary">아침</button>
@@ -36,36 +38,20 @@
                       <a class="dropdown-item" href="#">인구수</a>
                       <a class="dropdown-item" href="#">GDP</a>
                     </div>
-                 </div>
-                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-secondary">규제</button>
-                 </div>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">규제</button>
+                </div>
              </div>
-
         </div>
         <div class="col">
-            <div style="padding:10px;">  </div>
+            <div style="padding:10px;"></div>
                  <img src="http://data.si.re.kr/sites/default/files/2013-BR-06_%EA%B7%B8%EB%A6%BC%2010-6%20%EC%95%84%EB%A6%AC%EC%88%98%20%EC%A0%95%EC%88%98%EC%84%BC%ED%84%B0%EB%B3%84%20%EA%B8%89%EC%88%98%EA%B5%AC%EC%97%AD%202012.jpg", height="400", width="700">
-    </div>
+        </div>
 
 
-{#        </div>#}
-{#      </div>#}
-{#      <div class="row">#}
-{#        <div class="col">#}
-{#          1 of 3#}
-{#        </div>#}
-{#        <div class="col">#}
-{#          2 of 3#}
-{#        </div>#}
-{#        <div class="col">#}
-{#          3 of 3#}
-{#        </div>#}
-{#      </div>#}
       <div class="row">
         <div class="col-" style="margin-left:50px;margin-right:50px;">
-{#              <nav id="navbar-example3" class="navbar navbar-light bg-light">#}
-{#                  <a class="navbar-brand" href="#">Navbar</a>#}
               <nav class="nav nav-pills flex-column">
                 <a class="nav-link" href="#item-1">Item 1</a>
                 <nav class="nav nav-pills flex-column">
@@ -79,7 +65,6 @@
                   <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
                 </nav>
               </nav>
-            </nav>
 
         </div>
     <div class="col-sm">
@@ -134,9 +119,5 @@
     </div>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
