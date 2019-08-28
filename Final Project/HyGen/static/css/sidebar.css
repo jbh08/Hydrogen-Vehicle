@@ -14,7 +14,7 @@ input[id='menuicon'] + label{
 }
 div[class='sidebar']{
   width: 435px;
-  height: 35%;
+  height: 41%;
   background: #222;
   position: fixed;
   top: 20%;
